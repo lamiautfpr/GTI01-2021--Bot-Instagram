@@ -1,10 +1,14 @@
 from instapy import InstaPy
 from instapy import smart_run
+from dotenv import load_dotenv
+import os
 
-session = InstaPy(username="nome_de_usuario", 
-                  password="senha") #login e senha do usuario
+load_dotenv()
 
-with smart_run(session):
+session = InstaPy(username=os.getenv("LAMIA_LOGIN"), 
+                  password=os.getenv("LAMIA_SENHA")) #login e senha do usuario
+
+with smart_run(session): 
   
   session.follow_user_followers(['filipedeschamps'], amount=500,
                                 randomize=False, interact=False)
