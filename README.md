@@ -9,4 +9,4 @@ Requisitos:
 - InstaPy
 
 PS: Caso ocorra o erro - Internet Connection Status: error:
-Acessar o arquivo login_util.py na raiz do Instapy e comentar da linha 162 a 218.
+Acessar o arquivo login_util.py na raiz do Instapy e comentar da linha 162 a 206.
